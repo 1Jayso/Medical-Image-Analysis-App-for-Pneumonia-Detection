@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<body>
+
+					<!-- {{ predictions }} -->
+					<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+<h2>Results</h2>
+
+
+
+<table>
+  <tr>
+    <th>Disease</th>
+    <th>Percent Likelihood</th>
+  </tr>
+  <tr>
+  {% if predict > 50 %}
+    <td>Pneumonia</td>
+    <td>{{   predict |int }}%</td>
+    {% endif %}
+  </tr>
+  <tr>
+  {% if predict < 50 %}
+    <td>Normal</td>
+    <td> {{ predict |int }}%</td>
+  {% endif %} 
+  </tr>
+</table>
+
+
+
+</body>
+</html>
+    <title>Index</title>
+</head>
+<body>
+</body>
+</html>
+
+
+{% endblock %}
