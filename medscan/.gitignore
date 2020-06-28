@@ -1,0 +1,7 @@
+*.db
+*.log
+*.pyc
+config.py
+*.vscode
+*.__pycache__
+*.pyenv
