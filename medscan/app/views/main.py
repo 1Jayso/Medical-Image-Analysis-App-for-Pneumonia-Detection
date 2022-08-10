@@ -57,6 +57,7 @@ def upload_file():
       f = request.files['file']
       path = os.path.join(app.config['UPLOAD_FOLDER'], f.filename)
     #   graph = tf.get_default_graph()
+      print(f"This is the iamge {path}")
       img = cv2.imread(path)
       img = cv2.resize(img, (64,64))
       img = np.array(img, dtype='float32')

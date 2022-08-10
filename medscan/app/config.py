@@ -38,4 +38,4 @@ LOG_MAXBYTES = 1024
 LOG_BACKUPS = 2
 
 
-UPLOAD_FOLDER = '/home/sja/Documents/Project/medscan/app/test_data'
+UPLOAD_FOLDER = '[path to the test folder]'
