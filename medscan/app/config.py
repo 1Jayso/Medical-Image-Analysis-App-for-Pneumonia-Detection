@@ -38,4 +38,14 @@ LOG_MAXBYTES = 1024
 LOG_BACKUPS = 2
 
 
-UPLOAD_FOLDER = '[path to the test folder]'
+
+
+UPLOAD_FOLDER = '/medscan/app/test_data'
+
+
+
+
+
+
+
+

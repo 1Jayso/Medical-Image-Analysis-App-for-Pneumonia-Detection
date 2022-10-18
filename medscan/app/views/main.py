@@ -55,15 +55,27 @@ model, graph = init()
 def upload_file():
    if request.method == 'POST':
       f = request.files['file']
+      print(f' this is the file: {f}')
       path = os.path.join(app.config['UPLOAD_FOLDER'], f.filename)
     #   graph = tf.get_default_graph()
-      print(f"This is the iamge {path}")
+      # print()
+      # print(f"This is the image {path}")
+      # print()
+      
+      
+      
+      
       img = cv2.imread(path)
+      print(f"This is the image path: {path}")
+      print(f"This is the image you are looking {img}")
       img = cv2.resize(img, (64,64))
       img = np.array(img, dtype='float32')
       img = img/255.0
       img = img.reshape((1,64,64,3))
       img.shape
+
+
+
 
     #   clear_session()
 
@@ -79,7 +91,7 @@ def upload_file():
       
       predict =  int(pred*100)
       print(pred)
-      f.save(path)
+      # f.save(path)
       return render_template('uploaded.html', title='Success', predict=predict, user_image=f.filename)
 
 
