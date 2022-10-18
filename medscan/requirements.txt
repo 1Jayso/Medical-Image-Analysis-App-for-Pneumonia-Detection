@@ -18,7 +18,7 @@ Flask-SQLAlchemy==2.4.3
 Flask-WTF==0.14.3
 gast==0.2.2
 grpcio==1.30.0
-gunicorn==19.4.5
+gunicorn==19.5.0
 h5py==2.10.0
 html5lib==0.9999999
 idna==2.9
