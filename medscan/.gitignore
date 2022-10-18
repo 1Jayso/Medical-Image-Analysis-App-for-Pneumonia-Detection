@@ -6,4 +6,4 @@ config.py
 *.__pycache__
 *.pyenv
 medscan/app/views/__pycache__/main.cpython-36.pyc 
-../.vscode/
+.vscode/
